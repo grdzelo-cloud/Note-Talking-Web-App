@@ -9,4 +9,56 @@
     --default-font-family: "Inter", sans-serif;
     --font-noto-serif: "Noto serif", serif;
     --font-source-code-pro: "Source code pro", serif;
+
+    /* spacing */
+    --tracking-025: 2px;
+    --tracking-050: 4px;
+    --tracking-075: 6px;
+    --tracking-100: 8px;
+    --tracking-150: 12px;
+    --tracking-200: 16px;
+    --tracking-250: 20px;
+    --tracking-300: 24px;
+    --tracking-400: 32px;
+    --tracking-500: 40px;
+    --tracking-600: 2px;
+    --tracking-800: 64px;
+    --tracking-1000: 2px;
+
+    /* radius */
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 10px;
+    --radius-2xl: 12px;
+    --radius-3xl: 16px;
+    --radius-4xl: 20px;
+    --radius-5xl: 24px;
+
+    /* box-shadow */
+    --shadow-sm: 0 4px 6px -1px #F0F0F099;
+    --shadow-lg: 0 8px 12px -1px #F0F0F099;
+}
+
+@layer theme {
+    .text-present-1-primary {
+        @apply font-[20px] ;
+    }
+
+    .grid-sidebar {
+        @apply grid lg:grid-cols-14 md:grid-cols-12 sm:grid-cols-8 gap-[24px];
+    }
+
+,
+.text-present-1-secondary {
+    @apply font-[16px] ;
+}
+    .text-present-2-primary {
+        @apply font-[18px] ;
+    }
+
+,
+.text-present-2-therdary {
+    @apply font-[14px] ;
+}
 }
