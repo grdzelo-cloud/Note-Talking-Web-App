@@ -5,6 +5,7 @@
     scroll-behavior: smooth;
 }
 
+
 @theme {
     --default-font-family: "Inter", sans-serif;
     --font-noto-serif: "Noto serif", serif;
@@ -103,4 +104,10 @@
     .grid-sidebar {
         @apply grid lg:grid-cols-14 md:grid-cols-12 sm:grid-cols-8 gap-[24px];
     }
+
+    
+}
+
+body {
+    background-color: var(--color-stone-950);
 }
