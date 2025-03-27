@@ -80,7 +80,100 @@
     }
 
 
-    .text-present-2-therdary {
+    .text-present-2-tertiary {
         @apply font-[14px];
+    }
+
+    /* fonts */
+
+    .text-present-1 {
+        @apply text-[24px] text-base/[120%] tracking-[-0.5px];
+    }
+    .text-present-2 {
+        @apply text-[20px] text-base/[120%] tracking-[-0.5px];
+    }
+    .text-present-3 {
+        @apply text-[16px] text-base/[120%] tracking-[-0.3px];
+    }
+    .text-present-4-5 {
+        @apply text-[14px] text-base/[120%] tracking-[-0.2px];
+    }
+    .text-present-6 {
+        @apply text-[12px] text-base/[120%] tracking-[-0.2px];
+    }
+
+    /* inter */
+    .text-present-1-primary-bold {
+        @apply text-present-1 font-bold;
+    }
+
+    .text-present-2-primary-bold {
+        @apply text-present-2 font-bold;
+    }
+
+    .text-present-3-primary-semibold {
+        @apply text-present-3 font-semibold;
+    }
+
+    .text-present-4-primary-medium {
+        @apply text-present-4-5 font-medium;
+    }
+
+    .text-present-5-primary-regular {
+        @apply text-present-4-5;
+    }
+
+    .text-present-6-primary-regular {
+        @apply text-present-6;
+    }
+
+    /* noto serif */
+    .text-present-1-secondary-bold {
+        @apply text-present-1 font-noto-serif font-bold;
+    }
+
+    .text-present-2-secondary-bold {
+        @apply text-present-2 font-noto-serif font-bold;
+    }
+
+    .text-present-3-secondary-semibold {
+        @apply text-present-3 font-noto-serif font-semibold;
+    }
+
+    .text-present-4-secondary-medium {
+        @apply text-present-4-5 font-noto-serif font-medium;
+    }
+
+    .text-present-5-secondary-regular {
+        @apply text-present-4-5 font-noto-serif;
+    }
+
+    .text-present-6-secondary-regular {
+        @apply text-present-6 font-noto-serif;
+    }
+
+    /* source code pro */
+    .text-present-1-tertiary-bold {
+        @apply text-present-1 font-source-code-pro font-bold;
+    }
+
+    .text-present-2-tertiary-bold {
+        @apply text-present-2 font-source-code-pro font-bold;
+    }
+
+    .text-present-3-tertiary-semibold {
+        @apply text-present-3 font-source-code-pro font-semibold;
+    }
+
+    .text-present-4-tertiary-medium {
+        @apply text-present-4-5 font-source-code-pro font-medium;
+    }
+
+    .text-present-5-tertiary-regular {
+        @apply text-present-4-5 font-source-code-pro;
+    }
+
+    .text-present-6-tertiary-regular {
+        @apply text-present-6 font-source-code-pro;
     }
 }
