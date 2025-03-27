@@ -103,4 +103,22 @@
     .grid-sidebar {
         @apply grid lg:grid-cols-14 md:grid-cols-12 sm:grid-cols-8 gap-[24px];
     }
+
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+
+    .secondary-btn {
+        @apply transition-all duration-100 focus:outline-offset-2 rounded-lg focus:outline-2 focus:outline-neutral-400 hover:text-neutral-950 focus:border-neutral-950 hover:border-2 hover:border-neutral-300 border-neutral-100 cursor-pointer bg-neutral-100 hover:bg-white  text-neutral-600 text-xs text-presnet-4;
+    }
+
+    .border-btn {
+        @apply transition-all duration-100 focus:outline-offset-2 rounded-lg focus:outline-2 focus:outline-neutral-400 focus:border-neutral-950 hover:border-2  border-neutral-300 hover:border-neutral-100 cursor-pointer hover:bg-neutral-100 bg-white hover:text-neutral-600 text-neutral-950 text-xs text-presnet-4;
+    }
+}
+
+@layer base {
+    button {
+        @apply transition-all duration-100 px-[16px] py-[12px] border-2 focus:outline-offset-2 rounded-lg focus:outline-2 focus:outline-neutral-400 focus:text-neutral-950 cursor-pointer bg-blue-500 hover:bg-blue-700 text-white  text-xs text-presnet-4;
+    }
 }
