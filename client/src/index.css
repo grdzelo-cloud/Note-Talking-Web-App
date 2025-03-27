@@ -59,121 +59,48 @@
     --color-green-100: #D1FBE9;
     --color-red-500: #FB3748;
     --color-red-100: #FFD5D8;
+
+    /* typography */
+    --text-presnet-1: 24px;
+    --text-presnet-1--line-height: 120%;
+    --text-presnet-1--letter-spaceing: -0.5px;
+    --text-presnet-1--font-weight: 700;
+
+    --text-presnet-2: 20px;
+    --text-presnet-2--line-height: 120%;
+    --text-presnet-2--letter-spaceing: -0.5px;
+    --text-presnet-2--font-weight: 700;
+
+    --text-presnet-3: 16px;
+    --text-presnet-3--line-height: 120%;
+    --text-presnet-3--letter-spaceing: -0.3px;
+    --text-presnet-3--font-weight: 600;
+
+    --text-presnet-4: 14px;
+    --text-presnet-4--line-height: 120%;
+    --text-presnet-4--letter-spaceing: -0.2px;
+    --text-presnet-4--font-weight: 500;
+
+    --text-presnet-5: 14px;
+    --text-presnet-5--line-height: 120%;
+    --text-presnet-5--letter-spaceing: -0.2px;
+    --text-presnet-5--font-weight: 400;
+
+    --text-presnet-6: 12px;
+    --text-presnet-6--line-height: 120%;
+    --text-presnet-6--letter-spaceing: -0.2px;
+    --text-presnet-6--font-weight: 400;
+
+    /*font-size*/
+    --text-xs: 14px;
+    --text-sm: 16px;
+    --text-base: 18px;
+    --text-lg: 20px;
+    --text-xl: 24px;
 }
 
 @layer utilities {
-
     .grid-sidebar {
         @apply grid lg:grid-cols-14 md:grid-cols-12 sm:grid-cols-8 gap-[24px];
-    }
-
-    .text-present-1-primary {
-        @apply font-[20px];
-    }
-
-    .text-present-1-secondary {
-        @apply font-[16px];
-    }
-
-    .text-present-2-primary {
-        @apply font-[18px];
-    }
-
-
-    .text-present-2-tertiary {
-        @apply font-[14px];
-    }
-
-    /* fonts */
-
-    .text-present-1 {
-        @apply text-[24px] text-base/[120%] tracking-[-0.5px];
-    }
-    .text-present-2 {
-        @apply text-[20px] text-base/[120%] tracking-[-0.5px];
-    }
-    .text-present-3 {
-        @apply text-[16px] text-base/[120%] tracking-[-0.3px];
-    }
-    .text-present-4-5 {
-        @apply text-[14px] text-base/[120%] tracking-[-0.2px];
-    }
-    .text-present-6 {
-        @apply text-[12px] text-base/[120%] tracking-[-0.2px];
-    }
-
-    /* inter */
-    .text-present-1-primary-bold {
-        @apply text-present-1 font-bold;
-    }
-
-    .text-present-2-primary-bold {
-        @apply text-present-2 font-bold;
-    }
-
-    .text-present-3-primary-semibold {
-        @apply text-present-3 font-semibold;
-    }
-
-    .text-present-4-primary-medium {
-        @apply text-present-4-5 font-medium;
-    }
-
-    .text-present-5-primary-regular {
-        @apply text-present-4-5;
-    }
-
-    .text-present-6-primary-regular {
-        @apply text-present-6;
-    }
-
-    /* noto serif */
-    .text-present-1-secondary-bold {
-        @apply text-present-1 font-noto-serif font-bold;
-    }
-
-    .text-present-2-secondary-bold {
-        @apply text-present-2 font-noto-serif font-bold;
-    }
-
-    .text-present-3-secondary-semibold {
-        @apply text-present-3 font-noto-serif font-semibold;
-    }
-
-    .text-present-4-secondary-medium {
-        @apply text-present-4-5 font-noto-serif font-medium;
-    }
-
-    .text-present-5-secondary-regular {
-        @apply text-present-4-5 font-noto-serif;
-    }
-
-    .text-present-6-secondary-regular {
-        @apply text-present-6 font-noto-serif;
-    }
-
-    /* source code pro */
-    .text-present-1-tertiary-bold {
-        @apply text-present-1 font-source-code-pro font-bold;
-    }
-
-    .text-present-2-tertiary-bold {
-        @apply text-present-2 font-source-code-pro font-bold;
-    }
-
-    .text-present-3-tertiary-semibold {
-        @apply text-present-3 font-source-code-pro font-semibold;
-    }
-
-    .text-present-4-tertiary-medium {
-        @apply text-present-4-5 font-source-code-pro font-medium;
-    }
-
-    .text-present-5-tertiary-regular {
-        @apply text-present-4-5 font-source-code-pro;
-    }
-
-    .text-present-6-tertiary-regular {
-        @apply text-present-6 font-source-code-pro;
     }
 }
