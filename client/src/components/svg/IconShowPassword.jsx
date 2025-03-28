@@ -1,6 +1,6 @@
-export default function IconShowPassword({color}) {
+export default function IconShowPassword({color, className}) {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" className={className} viewBox="0 0 24 24">
             <path className={color || 'fill-slate-950'} fillRule="evenodd"
                   d="M12.003 10.115c-1.332 0-2.412 1.036-2.412 2.315s1.08 2.316 2.412 2.316c1.332 0 2.412-1.037 2.412-2.316 0-1.28-1.08-2.315-2.412-2.315ZM8.09 12.43c0-2.075 1.752-3.755 3.912-3.755s3.912 1.68 3.912 3.755c0 2.074-1.752 3.756-3.912 3.756S8.09 14.504 8.09 12.43Z"
                   clipRule="evenodd"/>

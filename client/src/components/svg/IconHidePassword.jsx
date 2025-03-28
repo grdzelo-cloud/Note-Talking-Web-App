@@ -1,6 +1,6 @@
-export default function IconHidePassword({color}) {
+export default function IconHidePassword({color, className}) {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" className={className} viewBox="0 0 24 24">
             <path className={color || 'stroke-slate-950'} strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
                   d="M6.42 17.73c-2.23-1.46-3.67-3.66-3.67-5.59 0-3.28 4.14-7.3 9.25-7.3 2.09 0 4.03.67 5.59 1.71M19.85 8.61c.891 1.13 1.41 2.38 1.41 3.53 0 3.28-4.15 7.3-9.26 7.3-.91 0-1.799-.13-2.63-.36"/>
             <path className={color || 'stroke-slate-950'} strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"

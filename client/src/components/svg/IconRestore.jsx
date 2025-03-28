@@ -1,6 +1,6 @@
-export default function IconRestore({color}) {
+export default function IconRestore({color, className}) {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" className={className} viewBox="0 0 24 24">
             <path className={color || 'fill-slate-950'} fillRule="evenodd"
                   d="M3.708 7.404a.75.75 0 0 1 .983.398l1.316 3.114L9.1 9.608a.75.75 0 0 1 .584 1.382L5.9 12.59a.75.75 0 0 1-.983-.4L3.309 8.387a.75.75 0 0 1 .4-.982Z"
                   clipRule="evenodd"/>

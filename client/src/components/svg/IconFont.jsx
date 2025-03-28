@@ -1,5 +1,5 @@
-export default function IconFont({color}) {
-    return (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+export default function IconFont({color, className}) {
+    return (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" className={className} viewBox="0 0 24 24">
         <path className={color || 'fill-slate-950'} fillRule="evenodd"
               d="M20.999 10.979H14.63a1 1 0 0 0-1 1v1.13a1 1 0 1 0 2 0v-.13h1.154v4.409h-.39a1 1 0 1 0 0 2h2.84a1 1 0 1 0 0-2h-.45v-4.41h1.214v.13a1 1 0 1 0 2 0v-1.13a1 1 0 0 0-1-1Z"
               clipRule="evenodd"/>

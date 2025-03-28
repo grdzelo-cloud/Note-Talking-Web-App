@@ -62,35 +62,35 @@
     --color-red-100: #FFD5D8;
 
     /* typography */
-    --text-presnet-1: 24px;
-    --text-presnet-1--line-height: 120%;
-    --text-presnet-1--letter-spaceing: -0.5px;
-    --text-presnet-1--font-weight: 700;
+    --text-present-1: 24px;
+    --text-present-1--line-height: 120%;
+    --text-present-1--letter-spaceing: -0.5px;
+    --text-present-1--font-weight: 700;
 
-    --text-presnet-2: 20px;
-    --text-presnet-2--line-height: 120%;
-    --text-presnet-2--letter-spaceing: -0.5px;
-    --text-presnet-2--font-weight: 700;
+    --text-present-2: 20px;
+    --text-present-2--line-height: 120%;
+    --text-present-2--letter-spaceing: -0.5px;
+    --text-present-2--font-weight: 700;
 
-    --text-presnet-3: 16px;
-    --text-presnet-3--line-height: 120%;
-    --text-presnet-3--letter-spaceing: -0.3px;
-    --text-presnet-3--font-weight: 600;
+    --text-present-3: 16px;
+    --text-present-3--line-height: 120%;
+    --text-present-3--letter-spaceing: -0.3px;
+    --text-present-3--font-weight: 600;
 
-    --text-presnet-4: 14px;
-    --text-presnet-4--line-height: 120%;
-    --text-presnet-4--letter-spaceing: -0.2px;
-    --text-presnet-4--font-weight: 500;
+    --text-present-4: 14px;
+    --text-present-4--line-height: 120%;
+    --text-present-4--letter-spaceing: -0.2px;
+    --text-present-4--font-weight: 500;
 
-    --text-presnet-5: 14px;
-    --text-presnet-5--line-height: 120%;
-    --text-presnet-5--letter-spaceing: -0.2px;
-    --text-presnet-5--font-weight: 400;
+    --text-present-5: 14px;
+    --text-present-5--line-height: 120%;
+    --text-present-5--letter-spaceing: -0.2px;
+    --text-present-5--font-weight: 400;
 
-    --text-presnet-6: 12px;
-    --text-presnet-6--line-height: 120%;
-    --text-presnet-6--letter-spaceing: -0.2px;
-    --text-presnet-6--font-weight: 400;
+    --text-present-6: 12px;
+    --text-present-6--line-height: 120%;
+    --text-present-6--letter-spaceing: -0.2px;
+    --text-present-6--font-weight: 400;
 
     /*font-size*/
     --text-xs: 14px;
@@ -110,19 +110,17 @@
     }
 
     .secondary-btn {
-        @apply transition-all duration-100 focus:outline-offset-2 rounded-lg focus:outline-2 focus:outline-neutral-400 hover:text-neutral-950 focus:border-neutral-950 hover:border-2 hover:border-neutral-300 border-neutral-100 cursor-pointer bg-neutral-100 hover:bg-white  text-neutral-600 text-xs text-presnet-4;
+        @apply transition-all duration-100 focus:text-neutral-950 focus:bg-white focus:outline-offset-2 rounded-lg focus:outline-2 focus:outline-neutral-400 hover:text-neutral-950 focus:border-neutral-950 hover:border-2 hover:border-neutral-300 border-neutral-100 cursor-pointer bg-neutral-100 hover:bg-white  text-neutral-600 text-xs text-present-4;
     }
 
     .border-btn {
-        @apply transition-all duration-100 focus:outline-offset-2 rounded-lg focus:outline-2 focus:outline-neutral-400 focus:border-neutral-950 hover:border-2  border-neutral-300 hover:border-neutral-100 cursor-pointer hover:bg-neutral-100 bg-white hover:text-neutral-600 text-neutral-950 text-xs text-presnet-4;
+        @apply transition-all duration-100 focus:outline-offset-2 rounded-lg focus:outline-2 focus:outline-neutral-400 focus:border-neutral-950 hover:border-2  border-neutral-300 hover:border-neutral-100 cursor-pointer hover:bg-neutral-100 bg-white hover:text-neutral-600 text-neutral-950 text-xs text-present-4;
+    }
+    .disabled-btn {
+        @apply transition-all duration-100 disabled:bg-slate-100 text-slate-300 border-slate-100 cursor-not-allowed;
     }
 }
 
-@layer base {
-    button {
-        @apply transition-all duration-100 px-[16px] py-[12px] border-2 focus:outline-offset-2 rounded-lg focus:outline-2 focus:outline-neutral-400 focus:text-neutral-950 cursor-pointer bg-blue-500 hover:bg-blue-700 text-white  text-xs text-presnet-4;
-    }
-}
 
 body {
     background-color: var(--color-neutral-950);

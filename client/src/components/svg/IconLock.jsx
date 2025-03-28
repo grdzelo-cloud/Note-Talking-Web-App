@@ -1,6 +1,6 @@
-export default function IconLock({color}) {
+export default function IconLock({color, className}) {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" className={className} viewBox="0 0 24 24">
             <path className={color || 'stroke-slate-950'} strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8"
                   d="M16.424 9.448V7.3a4.552 4.552 0 0 0-4.551-4.551 4.55 4.55 0 0 0-4.57 4.53v2.168"/>
             <path className={color || 'stroke-slate-950'} strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8"
