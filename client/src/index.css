@@ -10,6 +10,7 @@
     --default-font-family: "Inter", sans-serif;
     --font-noto-serif: "Noto serif", serif;
     --font-source-code-pro: "Source code pro", serif;
+    --font-sans-serif: sans-serif;
 
     /* spacing */
     --tracking-025: 2px;
@@ -64,32 +65,32 @@
     /* typography */
     --text-present-1: 24px;
     --text-present-1--line-height: 120%;
-    --text-present-1--letter-spaceing: -0.5px;
+    --text-present-1--letter-spacing: -0.5px;
     --text-present-1--font-weight: 700;
 
     --text-present-2: 20px;
     --text-present-2--line-height: 120%;
-    --text-present-2--letter-spaceing: -0.5px;
+    --text-present-2--letter-spacing: -0.5px;
     --text-present-2--font-weight: 700;
 
     --text-present-3: 16px;
     --text-present-3--line-height: 120%;
-    --text-present-3--letter-spaceing: -0.3px;
+    --text-present-3--letter-spacing: -0.3px;
     --text-present-3--font-weight: 600;
 
     --text-present-4: 14px;
     --text-present-4--line-height: 120%;
-    --text-present-4--letter-spaceing: -0.2px;
-    --text-present-4--font-weight: 500;
+    --text-present-4--letter-spacing: -0.2px;
+    --text-present-4--font-weight: 400;
 
     --text-present-5: 14px;
     --text-present-5--line-height: 120%;
-    --text-present-5--letter-spaceing: -0.2px;
+    --text-present-5--letter-spacing: -0.2px;
     --text-present-5--font-weight: 400;
 
     --text-present-6: 12px;
     --text-present-6--line-height: 120%;
-    --text-present-6--letter-spaceing: -0.2px;
+    --text-present-6--letter-spacing: -0.2px;
     --text-present-6--font-weight: 400;
 
     /*font-size*/
@@ -107,17 +108,6 @@
 
     .flex-center {
         @apply flex justify-center items-center;
-    }
-
-    .secondary-btn {
-        @apply transition-all duration-100 focus:text-neutral-950 focus:bg-white focus:outline-offset-2 rounded-lg focus:outline-2 focus:outline-neutral-400 hover:text-neutral-950 focus:border-neutral-950 hover:border-2 hover:border-neutral-300 border-neutral-100 cursor-pointer bg-neutral-100 hover:bg-white  text-neutral-600 text-xs text-present-4;
-    }
-
-    .border-btn {
-        @apply transition-all duration-100 focus:outline-offset-2 rounded-lg focus:outline-2 focus:outline-neutral-400 focus:border-neutral-950 hover:border-2  border-neutral-300 hover:border-neutral-100 cursor-pointer hover:bg-neutral-100 bg-white hover:text-neutral-600 text-neutral-950 text-xs text-present-4;
-    }
-    .disabled-btn {
-        @apply transition-all duration-100 disabled:bg-slate-100 text-slate-300 border-slate-100 cursor-not-allowed;
     }
 }
 
