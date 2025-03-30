@@ -1,28 +1,29 @@
-import {Button} from "@/components/ui/button.jsx"
-import Alert from "@/components/ui/alert.jsx"
-import {useState} from "react";
+import { Button } from "@/components/ui/button.jsx";
+import useToast from "./store/toast";
+import ToastButton from "./components/toast-button";
 
 
 export default function App() {
-    const [isOpen, setIsOpen] = useState(false)
-
-    const handleFunction = () => {
-        console.log('Hello World')
+    const { popup,setVariant } = useToast()
+    const handleClick = () => {
+        popup()
+        setVariant("note-archived")
     }
-    const handleFunction2 = () => {
-        setIsOpen(!isOpen)
-    }
-
     return (
-        <div className="h-screen bg-[#f5f7fa] w-screen ">
-            <div className="max-w-[1200px] text-present-1 mx-auto shadow-sm rounded-5xl ">
+        <div
+            className=" bg-neutral-0 h-screen ">
+            <div
+
+            >
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi consequuntur officiis pariatur iusto consequatur, voluptatibus tempora, tenetur placeat eum ipsa perspiciatis adipisci maiores quasi eveniet minus culpa, qui quaerat vel!</p>
                 <div
-                onClick={handleFunction2}
+                    className="relative z-99"
+                    onClick={() => handleClick()}
                 >
-                    <Button className={"absolute-center"}>Secondary Button</Button>
+                    <Button
+                    >Click Toast</Button>
                 </div>
-                <Alert isOpen={isOpen} setIsOpen={setIsOpen} variant={"delete"} func={handleFunction}/>
             </div>
         </div>
-    )
+    );
 }
