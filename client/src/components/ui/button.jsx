@@ -1,6 +1,6 @@
 import IconArchive from "../svg/IconArchive.jsx";
 
-export default function Button({children, variant}) {
+export default function Button({children, variant, className}) {
     return (
         <>
             {variant === 'secondary' ? (
@@ -12,7 +12,7 @@ export default function Button({children, variant}) {
                     <IconArchive color={"stroke-blue-400"}/>
                 </button>
             ) : (
-                <button>{children}</button>
+                <button className={`${className}`}>{children}</button>
             )}
         </>
     );
