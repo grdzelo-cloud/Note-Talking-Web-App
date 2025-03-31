@@ -1,10 +1,10 @@
-export default function IconArchive({stroke, className}) {
+export default function IconSun({stroke, className}) {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" className={className} viewBox="0 0 24 24">
             <path className={stroke || 'stroke-slate-950'} strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
-                  d="M21 7.782v8.435C21 19.165 18.919 21 15.974 21H8.026C5.081 21 3 19.165 3 16.216V7.782C3 4.834 5.081 3 8.026 3h7.948C18.919 3 21 4.843 21 7.782Z"/>
+                  d="M12.055 3v1.372m0 15.256V21m9-9h-1.372M4.427 12H3.055m15.364-6.364-.97.97M6.66 17.394l-.97.97m12.728 0-.97-.97M6.66 6.606l-.97-.97"/>
             <path className={stroke || 'stroke-slate-950'} strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
-                  d="m15 14-3.002 3L9 14M11.998 17v-7M20.934 7H3.059"/>
+                  d="M12.055 7.805a4.195 4.195 0 1 1 0 8.39 4.195 4.195 0 0 1 0-8.39Z" clipRule="evenodd"/>
         </svg>
     )
 }

@@ -10,35 +10,37 @@
     --default-font-family: "Inter", sans-serif;
     --font-noto-serif: "Noto serif", serif;
     --font-source-code-pro: "Source code pro", serif;
+    --font-sans-serif: sans-serif;
 
     /* spacing */
-    --tracking-025: 2px;
-    --tracking-050: 4px;
-    --tracking-075: 6px;
-    --tracking-100: 8px;
-    --tracking-150: 12px;
-    --tracking-200: 16px;
-    --tracking-250: 20px;
-    --tracking-300: 24px;
-    --tracking-400: 32px;
-    --tracking-500: 40px;
-    --tracking-600: 2px;
-    --tracking-800: 64px;
-    --tracking-1000: 2px;
+    --spacing-025: 2px;
+    --spacing-050: 4px;
+    --spacing-075: 6px;
+    --spacing-100: 8px;
+    --spacing-150: 12px;
+    --spacing-200: 16px;
+    --spacing-250: 20px;
+    --spacing-300: 24px;
+    --spacing-400: 32px;
+    --spacing-500: 40px;
+    --spacing-600: 2px;
+    --spacing-800: 64px;
+    --spacing-1000: 80px;
 
-    /* radius */
-    --radius-sm: 4px;
-    --radius-md: 6px;
-    --radius-lg: 8px;
-    --radius-xl: 10px;
-    --radius-2xl: 12px;
-    --radius-3xl: 16px;
-    --radius-4xl: 20px;
-    --radius-5xl: 24px;
+    /* border---radius */
+    --radius-4: 4px;
+    --radius-6: 6px;
+    --radius-8: 8px;
+    --radius-10: 10px;
+    --radius-12: 12px;
+    --radius-16: 16px;
+    --radius-20: 20px;
+    --radius-24: 24px;
+    --radius-full: 999px;
 
     /* box-shadow */
-    --shadow-sm: 0 4px 6px -1px #F0F0F099;
-    --shadow-lg: 0 8px 12px -1px #F0F0F099;
+    --shadow-sm: 0 4px 6px -1px #0E121B1A;
+    --shadow-lg: 0 16px 32px -12px #0E121B1A;
 
     /* colors */
     --color-neutral-950: #0E121B;
@@ -62,35 +64,35 @@
     --color-red-100: #FFD5D8;
 
     /* typography */
-    --text-present-1: 24px;
-    --text-present-1--line-height: 120%;
-    --text-present-1--letter-spaceing: -0.5px;
-    --text-present-1--font-weight: 700;
+    --text-preset-1: 24px;
+    --text-preset-1--line-height: 120%;
+    --text-preset-1--letter-spacing: -0.5px;
+    --text-preset-1--font-weight: 700;
 
-    --text-present-2: 20px;
-    --text-present-2--line-height: 120%;
-    --text-present-2--letter-spaceing: -0.5px;
-    --text-present-2--font-weight: 700;
+    --text-preset-2: 20px;
+    --text-preset-2--line-height: 120%;
+    --text-preset-2--letter-spacing: -0.5px;
+    --text-preset-2--font-weight: 700;
 
-    --text-present-3: 16px;
-    --text-present-3--line-height: 120%;
-    --text-present-3--letter-spaceing: -0.3px;
-    --text-present-3--font-weight: 600;
+    --text-preset-3: 16px;
+    --text-preset-3--line-height: 120%;
+    --text-preset-3--letter-spacing: -0.3px;
+    --text-preset-3--font-weight: 600;
 
-    --text-present-4: 14px;
-    --text-present-4--line-height: 120%;
-    --text-present-4--letter-spaceing: -0.2px;
-    --text-present-4--font-weight: 500;
+    --text-preset-4: 14px;
+    --text-preset-4--line-height: 120%;
+    --text-preset-4--letter-spacing: -0.2px;
+    --text-preset-4--font-weight: 500;
 
-    --text-present-5: 14px;
-    --text-present-5--line-height: 120%;
-    --text-present-5--letter-spaceing: -0.2px;
-    --text-present-5--font-weight: 400;
+    --text-preset-5: 14px;
+    --text-preset-5--line-height: 120%;
+    --text-preset-5--letter-spacing: -0.2px;
+    --text-preset-5--font-weight: 400;
 
-    --text-present-6: 12px;
-    --text-present-6--line-height: 120%;
-    --text-present-6--letter-spaceing: -0.2px;
-    --text-present-6--font-weight: 400;
+    --text-preset-6: 12px;
+    --text-preset-6--line-height: 120%;
+    --text-preset-6--letter-spacing: -0.2px;
+    --text-preset-6--font-weight: 400;
 
     /*font-size*/
     --text-xs: 14px;
@@ -100,7 +102,8 @@
     --text-xl: 24px;
 }
 
-@layer utilities {
+@layer components {
+
     .grid-sidebar {
         @apply grid lg:grid-cols-14 md:grid-cols-12 sm:grid-cols-8 gap-[24px];
     }
@@ -109,18 +112,18 @@
         @apply flex justify-center items-center;
     }
 
-    .secondary-btn {
-        @apply transition-all duration-100 focus:outline-offset-2 rounded-lg focus:outline-2 focus:outline-neutral-400 hover:text-neutral-950 focus:border-neutral-950 hover:border-2 hover:border-neutral-300 border-neutral-100 cursor-pointer bg-neutral-100 hover:bg-white  text-neutral-600 text-xs text-present-4;
-    }
-
-    .border-btn {
-        @apply transition-all duration-100 focus:outline-offset-2 rounded-lg focus:outline-2 focus:outline-neutral-400 focus:border-neutral-950 hover:border-2  border-neutral-300 hover:border-neutral-100 cursor-pointer hover:bg-neutral-100 bg-white hover:text-neutral-600 text-neutral-950 text-xs text-present-4;
+    .absolute-center {
+        @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
     }
 }
 
 @layer base {
-    button {
-        @apply transition-all duration-100 px-[16px] py-[12px] border-2 focus:outline-offset-2 rounded-lg focus:outline-2 focus:outline-neutral-400 cursor-pointer bg-blue-500 hover:bg-blue-700 text-white text-xs text-present-4;
+    p {
+        @apply text-neutral-700 text-preset-5;
+    }
+
+    html {
+        @apply text-neutral-950;
     }
 }
 
