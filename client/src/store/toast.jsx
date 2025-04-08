@@ -11,4 +11,4 @@ const useToast = create((set) => ({
     }
 }))
 
-export default useToast
+export default useToast;

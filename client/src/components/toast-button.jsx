@@ -1,5 +1,4 @@
 import { toastConstants } from "@/constants/index.js";
-import { IconCheckmark, IconCross } from "@/components/svg/index.js";
 import useToast from "../store/toast";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";

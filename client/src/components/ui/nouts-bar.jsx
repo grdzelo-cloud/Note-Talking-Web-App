@@ -1,9 +1,6 @@
 import { useState } from "react";
-import Button from "./button";
 import { Note } from "./note";
-
-// const texts = ["React Performance Optimization", "Japan Travel Planning", "Favorite Pasta Recipes",
-//     "TypeScript Migration Guide", "Weekly Workout Plan", "Gift Ideas"];
+import { Button } from "./button.jsx"
 
 const notes = [
     { id: 1, title: "React Performance Optimization", tags: ["Dev", "React"], date: "29 Oct 2024", isSelected: true },
@@ -27,17 +24,9 @@ export const NoutsBar = () => {
 
     return (
         <section className="w-[290px] h-screen bg-neutral-0 pl-8 pr-4 py-5 flex flex-col gap-4 overflow-y-auto 
-        max-[769px]:w-full">
+        max-[769px]:w-full min-[1800px]:w-[350px]">
             <Button>+ Create New Note</Button>
             <div>
-                {/* <div className="w-full bg-neutral-100 p-2 flex flex-col gap-3 rounded-md">
-                    <p className="text-neutral-950 text-present-3">React Performance Optimization</p>
-                    <div className="flex gap-1">
-                        <p className="text-present-6 text-neutral-950 bg-neutral-200 px-[6px] py-[2px] rounded-md">Dev</p>
-                        <p className="text-present-6 text-neutral-950 bg-neutral-200 px-[6px] py-[2px] rounded-md">React</p>
-                    </div>
-                    <p className="text-present-6 text-neutral-700">29 Oct 2024</p>
-                </div> */}
                 {
                     notesList.map((curValue, index)=> {
                         return <Note key={index} note={curValue} isBorder={index !== notesList.length - 1} handleClick={handleClick} />

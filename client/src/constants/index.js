@@ -1,4 +1,3 @@
-import {IconArchive, IconDelete} from "@/components/svg/index.js";
 import {createElement} from "react";
 
 export const modalConstants = [{

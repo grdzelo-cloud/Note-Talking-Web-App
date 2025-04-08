@@ -126,7 +126,3 @@
         @apply text-neutral-950;
     }
 }
-
-body {
-    background-color: var(--color-neutral-950);
-}
